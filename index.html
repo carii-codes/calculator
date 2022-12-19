@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>calculator</title>
         <link rel="stylesheet" href="styles.css">
-        <script src="calc.js" defer></script>
+        <script src="http://cdn.tailwindcss.com"></script>
     </head>
 <body>
+    <div class="calcBody max-w-lg rounded overflow-hidden shadow-2xl bg-pink-700 bg-opacity-75 bg-gradient-to-tr from-gray-800 flex">
+        <div class="px-8 py-8">
+            <div class="flex mb-1 justify-end">
+                <div class="output">
+                    <div class="previousNum"></div>
+                    <div class="currentNum">0</div>
+                </div>
+                <button class="clear">AC</button>
+            </div>
+            <div class="flex mb-1">
+                <button class="num">7</button>
+                <button class="num">8</button>
+                <button class="num">9</button>
+                <button class="operator">/</button>
+            </div>
+            <div class="flex mb-1">
+                <button class="num">4</button>
+                <button class="num">5</button>
+                <button class="num">6</button>
+                <button class="operator">x</button>
+            </div>
+            <div class="flex mb-1">
+                <button class="num">1</button>
+                <button class="num">2</button>
+                <button class="num">3</button>
+                <button class="operator">-</button>
+            </div>
+            <div class="flex mb-1">
+                <button class="decimal">.</button>
+                <button class="num">0</button>
+                <button class="equal">=</button>
+                <button class="operator">+</button>
+            </div>
+        </div>
+    </div>
 
+
+<footer class="footer">
+
+</footer>
+<script src="calc.js" defer></script>
 </body>
-<footer></footer>
 </html>
